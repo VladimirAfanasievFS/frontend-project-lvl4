@@ -1,14 +1,17 @@
-install:
-	npm ci --legacy-peer-deps
+lint-frontend:
+	make -C frontend lint
 
-build:
-	npm run build
+install:
+	npm ci
 
 start-frontend:
-	npx react-scripts start -timeout=1000
+	make -C frontend start
 
 start-backend:
-	npx start-server -p 5001
+	npx start-server
+
+deploy:
+	git push heroku main
 
 start:
 	make start-backend & make start-frontend
