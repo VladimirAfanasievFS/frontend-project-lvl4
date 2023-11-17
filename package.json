@@ -1,7 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-  "description": "",
+  "description": "[![Actions Status](https://github.com/DmitryKr2021/frontend-project-12/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/DmitryKr2021/frontend-project-12/actions)",
   "main": "index.js",
   "scripts": {
     "build": "npm run build --prefix frontend",
@@ -9,9 +9,21 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "cd frontend && npm ci"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DmitryKr2021/frontend-project-12.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DmitryKr2021/frontend-project-12/issues"
+  },
+  "proxy": "http://localhost:5001",
+  "homepage": "https://github.com/DmitryKr2021/frontend-project-12#readme",
   "dependencies": {
-    "@hexlet/chat-server": "^1.1.6"
+    "@hexlet/chat-server": "^1.1.8"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   }
 }
